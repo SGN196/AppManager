@@ -39,7 +39,7 @@
         <!--<table  tableName="dev_user" domainObjectName="DevUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
                 <!--enableSelectByExample="false" selectByExampleQueryId="false" >-->
         <!--</table>-->
-        <table  tableName="app_category" domainObjectName="AppCategory" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+        <table  tableName="data_dictionary" domainObjectName="DataDictionary" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                 enableSelectByExample="false" selectByExampleQueryId="false" >
         </table>
 

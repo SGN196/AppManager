@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.caiqian.mapper.AppInfoMapper" >
-    <select id="queryByDevUserId" resultType="com.caiqian.Bean.AppInfo">
-        select t1.softwareName, t1.APKName, t1.softwareSize, t1.flatformId, t1.status,
-        t1.downloads, t1.versionId,
-        tc1.category_Name as categoryLevel1Name
-        tc2.category_Name as categoryLevel2Name
-        tc3.category_Name as categoryLevel3Name
-        from app_info t1, app_category tc1, app_category tc2, app_category tc3
+
+    <resultMap id="base" type="com.caiqian.Bean.AppInfo">
+        <id property="id" column="appId"></id>
+        <result property="softwareName" column="softwareName"></result>
+        <result property="apkName" column="softwareName"></result>
+        <result property="softwareSize" column="softwareSize" javaType="java.math.BigDecimal"></result>
+        <result property="flatformId" column="flatformId"></result>
+        <result property="status" column="status"></result>
+        <result property="downloads" column="downloads"></result>
+    </resultMap>
+
+    <resultMap id="appInfoWithThreeCategoryAndVersion" type="com.caiqian.Bean.AppInfo" extends="base">
+        <association property="newAppVersion" javaType="com.caiqian.Bean.AppVersion">
+            <id property="id" column="versionId"></id>
+            <result property="versionNo" column="version_No"></result>
+        </association>
+        <association property="categoryLevel1" javaType="com.caiqian.Bean.AppCategory">
+            <result property="categoryName" column="categoryLevel1Name"/>
+        </association>
+        <association property="categoryLevel2" javaType="com.caiqian.Bean.AppCategory">
+            <result property="categoryName" column="categoryLevel2Name"/>
+        </association>
+        <association property="categoryLevel3" javaType="com.caiqian.Bean.AppCategory">
+            <result property="categoryName" column="categoryLevel3Name"/>
+        </association>
+    </resultMap>
+
+
+    <select id="queryByDevUserId" resultMap="appInfoWithThreeCategoryAndVersion">
+        SELECT
+            t1.id appId,
+            t1.softwareName,
+            t1.APKName,
+            t1.softwareSize,
+            t1.flatformId,
+            t1.`status`,
+            t1.downloads,
+            t1.versionId,
+            tc1.category_Name AS categoryLevel1Name,
+            tc2.category_Name AS categoryLevel2Name,
+            tc3.category_Name AS categoryLevel3Name,
+            t3.version_No
+        FROM
+            app_info t1
+                LEFT JOIN
+            app_category tc1 ON t1.categoryLevel1 = tc1.id
+                LEFT JOIN
+            app_category tc2 ON t1.categoryLevel2 = tc2.id
+                LEFT JOIN
+            app_category tc3 ON t1.categoryLevel3 = tc3.id
+                LEFT JOIN
+            app_version t3 ON t1.versionId = t3.id,
+            dev_user t4
         <where>
-          t1.categoryLevel1 = tc1.id and
-          t1.categoryLevel2 = tc2.id and
-            t1.categoryLevel3 = tc3.id
-
+            t1.devId = t4.id AND t4.id = #{devUserId}
         </where>
-
     </select>
 
 </mapper>

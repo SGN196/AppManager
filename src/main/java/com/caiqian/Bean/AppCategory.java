@@ -20,7 +20,7 @@ public class AppCategory {
 
     private Date modifyDate;
 
-    private List<AppInfo> appinfos;
+    private List<AppInfo> appInfos;
 
     public AppCategory() {
     }
@@ -90,10 +90,10 @@ public class AppCategory {
     }
 
     public List<AppInfo> getAppinfos() {
-        return appinfos;
+        return appInfos;
     }
 
     public void setAppinfos(List<AppInfo> appinfos) {
-        this.appinfos = appinfos;
+        this.appInfos = appinfos;
     }
 }

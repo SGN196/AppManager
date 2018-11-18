@@ -15,12 +15,13 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
 
-    <jsp:include page="/jsp/common/header.jsp"></jsp:include>
+    <jsp:include page="${ctx}/jsp/common/header.jsp"></jsp:include>
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
         <div style="padding: 15px;">
-            欢迎你：${sessionScope.devUser.devName}|角色：开发者
+            欢迎你：${sessionScope.devUser.devName}|角色：开发者 ${sessionScope.devUser.id}
+
 
 
         </div>
@@ -28,7 +29,7 @@
 
 
     <!-- 底部固定区域 -->
-    <jsp:include page="/jsp/common/footer.jsp"/>
+    <jsp:include page="${ctx}/jsp/common/footer.jsp"/>
 
 </div>
 <script src="${ctx}/static/plugins/layui/layui.js"></script>

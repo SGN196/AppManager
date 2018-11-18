@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 11212
@@ -10,15 +11,160 @@
 <head>
     <title>App管理系统</title>
     <link rel="stylesheet" href="${ctx}/static/plugins/layui/css/layui.css">
+    <style>
+        /*table tr th:first-of-type{*/
+            /*width:9%;*/
+        /*}*/
+        /*table tr th:nth-of-type(2){*/
+            /*width:9%;*/
+        /*}*/
+    </style>
+
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
 
-    <jsp:include page="/jsp/common/header.jsp"></jsp:include>
+    <jsp:include page="${ctx}/jsp/common/header.jsp"></jsp:include>
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">这是APP应用管理页面</div>
+        <div style="padding: 15px;">
+
+            <!-- 条件搜索 -->
+
+            <form class="layui-form" action="">
+                <div class="layui-inline">
+                    <label class="layui-form-label">软件名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="number" autocomplete="off" class="layui-input">
+                    </div>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="layui-inline">
+                    <label class="layui-form-label">APP状态</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value=""></option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">所属平台</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value=""></option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select>
+                    </div>
+                </div><br>
+                <!------------------------------------------------->
+                <div class="layui-inline">
+                    <label class="layui-form-label">一级分类</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value=""></option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">二级分类</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value=""></option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">三级分类</label>
+                    <div class="layui-input-block">
+                        <select name="interest" lay-filter="aihao">
+                            <option value=""></option>
+                            <option value="0">写作</option>
+                            <option value="1" selected="">阅读</option>
+                            <option value="2">游戏</option>
+                            <option value="3">音乐</option>
+                            <option value="4">旅行</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+
+            <!--  个人APP列表-->
+            <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th >软件名称</th>
+                        <th>APK名称</th>
+                        <th>软件大小</th>
+                        <th>所属平台</th>
+                        <th>所属分类（一级、二级、三级）</th>
+                        <th>状态</th>
+                        <th>下载次数</th>
+                        <th>最新版本号</th>
+                        <th>操作</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <c:forEach items="${page.list}" var="obj">
+                        <tr>
+                            <td>${obj.softwareName}</td>
+                            <td>${obj.apkName}</td>
+                            <td>${obj.softwareSize} M</td>
+                            <td>
+                                <c:if test="${obj.flatformId eq 1}">手机</c:if>
+                                <c:if test="${obj.flatformId eq 2}">平板</c:if>
+                                <c:if test="${obj.flatformId eq 3}">手机、平板</c:if>
+                            </td>
+                            <td>${obj.categoryLevel1.categoryName} -> ${obj.categoryLevel2.categoryName} -> ${obj.categoryLevel3.categoryName} </td>
+                            <td>
+                                <c:if test="${obj.status eq 1}">待审核 </c:if>
+                                <c:if test="${obj.status eq 2}">审核通过</c:if>
+                                <c:if test="${obj.status eq 3}">审核不通过</c:if>
+                                <c:if test="${obj.status eq 4}">已上架</c:if>
+                                <c:if test="${obj.status eq 5}">已下架</c:if>
+                            </td>
+                            <td>${obj.downloads}</td>
+                            <td>${obj.newAppVersion.versionNo}</td>
+                            <td><button>点击操作</button></td>
+                        </tr>
+                    </c:forEach>
+                    <tr>
+                        <td>
+                            共${page.total} 条记录 第 ${page.pageNum}/ ${page.pages}页
+                        </td>
+                        <td colspan="8">
+                            <a href="">首页</a>
+                            <a href="">上一页</a>
+                            <a href="">下一页</a>
+                            <a href="">尾页</a>
+
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
     </div>
 
 
@@ -29,10 +175,25 @@
 <script src="${ctx}/static/plugins/layui/layui.js"></script>
 <script>
     //JavaScript代码区域
-    layui.use('element', function(){
+    // layui.use('element', function(){
+    //     var element = layui.element;
+    //
+    // });
+    // //Demo
+    // layui.use('form', function(){
+    //     var form = layui.form;
+    //
+    //     //监听提交
+    //     form.on('submit(formDemo)', function(data){
+    //         layer.msg(JSON.stringify(data.field));
+    //         return false;
+    //     });
+    // });
+    layui.use(['element', 'form'], function(){
         var element = layui.element;
-
-    });
+        var form = layui.form;
+    })
 </script>
+
 </body>
 </html>

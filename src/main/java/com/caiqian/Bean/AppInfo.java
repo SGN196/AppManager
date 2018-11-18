@@ -23,13 +23,13 @@ public class AppInfo {
 
     private String appInfo;
 
-    private Long status;
+    private Long status;                //审核状态：1、待审核 2、审核通过 3、审核不通过 4、已上架 5、已下架
 
     private Date onsaleDate;
 
     private Date offsaleDate;
 
-    private Long flatformId;
+    private Long flatformId;            //所属平台  1、手机    2、平板 3、通用
 
 
 
@@ -57,7 +57,19 @@ public class AppInfo {
 
     private List<AppVersion> appVersions;
 
+    private AppVersion newAppVersion;
+
+    public AppVersion getNewAppVersion() {
+        return newAppVersion;
+    }
+
+    public void setNewAppVersion(AppVersion newAppVersion) {
+        this.newAppVersion = newAppVersion;
+    }
+
     private DevUser devUser;
+
+
 
     public AppCategory getCategoryLevel1() {
         return categoryLevel1;

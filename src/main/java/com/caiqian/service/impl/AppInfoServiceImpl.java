@@ -24,7 +24,6 @@ public class AppInfoServiceImpl implements AppInfoService {
         List<AppInfo> list = appInfoMapper.queryByDevUserId(id);
 
         PageInfo<AppInfo> page = new PageInfo<AppInfo>(list);
-
-        return page ;
+        return page;
     }
 }
