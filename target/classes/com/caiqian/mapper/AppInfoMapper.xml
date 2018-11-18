@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.caiqian.mapper.AppInfoMapper" >
+    <select id="queryByDevUserId" resultType="com.caiqian.Bean.AppInfo">
+        select t1.softwareName, t1.APKName, t1.softwareSize, t1.flatformId, t1.status,
+        t1.downloads, t1.versionId,
+        tc1.category_Name as categoryLevel1Name
+        tc2.category_Name as categoryLevel2Name
+        tc3.category_Name as categoryLevel3Name
+        from app_info t1, app_category tc1, app_category tc2, app_category tc3
+        <where>
+          t1.categoryLevel1 = tc1.id and
+          t1.categoryLevel2 = tc2.id and
+            t1.categoryLevel3 = tc3.id
+
+        </where>
+
+    </select>
+
+</mapper>
