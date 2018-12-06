@@ -1,10 +1,10 @@
-package com.caiqian.mapper;
+package com.caiqian.service;
 
 import com.caiqian.Bean.AppCategory;
 
 import java.util.List;
 
-public interface AppCategoryMapper {
+public interface AppCategoryService {
 
     List<AppCategory> queryAllLevelOne();
 

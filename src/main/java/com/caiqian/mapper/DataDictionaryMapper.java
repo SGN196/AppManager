@@ -2,16 +2,11 @@ package com.caiqian.mapper;
 
 import com.caiqian.Bean.DataDictionary;
 
+import java.util.List;
+
 public interface DataDictionaryMapper {
-    int deleteByPrimaryKey(Long id);
 
-    int insert(DataDictionary record);
+    List<DataDictionary> queryAllAppStatus();
 
-    int insertSelective(DataDictionary record);
-
-    DataDictionary selectByPrimaryKey(Long id);
-
-    int updateByPrimaryKeySelective(DataDictionary record);
-
-    int updateByPrimaryKey(DataDictionary record);
+    List<DataDictionary> queryAllAppFlatforms();
 }

@@ -39,9 +39,9 @@
         <!--<table  tableName="dev_user" domainObjectName="DevUser" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
                 <!--enableSelectByExample="false" selectByExampleQueryId="false" >-->
         <!--</table>-->
-        <table  tableName="data_dictionary" domainObjectName="DataDictionary" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
-                enableSelectByExample="false" selectByExampleQueryId="false" >
-        </table>
+        <!--<table  tableName="data_dictionary" domainObjectName="DataDictionary" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
+                <!--enableSelectByExample="false" selectByExampleQueryId="false" >-->
+        <!--</table>-->
 
 
     </context>

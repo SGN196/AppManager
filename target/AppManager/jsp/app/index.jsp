@@ -43,12 +43,14 @@
                     <label class="layui-form-label">APP状态</label>
                     <div class="layui-input-block">
                         <select name="interest" lay-filter="aihao">
-                            <option value=""></option>
-                            <option value="0">写作</option>
-                            <option value="1" selected="">阅读</option>
-                            <option value="2">游戏</option>
-                            <option value="3">音乐</option>
-                            <option value="4">旅行</option>
+
+                            <option value="0" selected="">-请选择-</option>
+                            <c:forEach items="${appStatus}" var="obj">
+                                <option value="${obj.id}">${obj.valueName}</option>
+
+                            </c:forEach>
+
+
                         </select>
                     </div>
                 </div>
@@ -56,12 +58,12 @@
                     <label class="layui-form-label">所属平台</label>
                     <div class="layui-input-block">
                         <select name="interest" lay-filter="aihao">
-                            <option value=""></option>
-                            <option value="0">写作</option>
-                            <option value="1" selected="">阅读</option>
-                            <option value="2">游戏</option>
-                            <option value="3">音乐</option>
-                            <option value="4">旅行</option>
+                           <option type="0" >-请选择-</option>
+                            <c:forEach items="${appFlatforms}" var="obj">
+                                <option value="${obj.id}">${obj.valueName}</option>
+
+                            </c:forEach>
+
                         </select>
                     </div>
                 </div><br>
@@ -69,39 +71,28 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">一级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="aihao">
-                            <option value=""></option>
-                            <option value="0">写作</option>
-                            <option value="1" selected="">阅读</option>
-                            <option value="2">游戏</option>
-                            <option value="3">音乐</option>
-                            <option value="4">旅行</option>
+                        <select name="interest" id="levelOne" lay-filter="levelOne">
+                            <option>-请选择-</option>
+                            <c:forEach items="${levelOne}" var="obj">
+                                <option value="${obj.id}">${obj.categoryName }</option>
+                            </c:forEach>
                         </select>
                     </div>
                 </div>
                 <div class="layui-inline">
                     <label class="layui-form-label">二级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="aihao">
-                            <option value=""></option>
-                            <option value="0">写作</option>
-                            <option value="1" selected="">阅读</option>
-                            <option value="2">游戏</option>
-                            <option value="3">音乐</option>
-                            <option value="4">旅行</option>
+                        <select name="interest" lay-filter="levelTwo" id="levelTwo">
+                            <option value="0">-请选择-</option>
                         </select>
                     </div>
                 </div>
                 <div class="layui-inline">
                     <label class="layui-form-label">三级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="aihao">
-                            <option value=""></option>
-                            <option value="0">写作</option>
-                            <option value="1" selected="">阅读</option>
-                            <option value="2">游戏</option>
-                            <option value="3">音乐</option>
-                            <option value="4">旅行</option>
+                        <select name="interest" lay-filter="levelThree" id="levelThree">
+                            <option value="0">-请选择-</option>
+
                         </select>
                     </div>
                 </div>
@@ -189,9 +180,62 @@
     //         return false;
     //     });
     // });
-    layui.use(['element', 'form'], function(){
+    layui.use(['element', 'form', 'jquery'], function(){
         var element = layui.element;
         var form = layui.form;
+        var $ = layui.jquery;
+
+        form.on('select(levelOne)', function(){
+            var levelOneId = $('#levelOne').val();
+            if(levelOneId == 0){
+                return;
+            }else{
+                $.ajax({
+                    url:'${ctx}/category/queryLevelTwoByLevelOne/' + levelOneId,
+                    type:'get',
+                    success:function(data){
+                        var html = '<option value="0">-请选择-</option>';
+                        var len = data.length;
+                        alert(len);
+                        for(var i = 0; i < len; i++){
+                            html += '<option value="' + data[i].id + '">' + data[i].categoryName + '</option>';
+                        }
+                        $('#levelTwo').html(html);
+                        form.render();
+                    }
+                })
+            }
+        })
+        form.on('select(levelTwo)', function(){
+            var levelTwoId = $('#levelTwo').val();
+            if(levelTwoId == 0){
+                return;
+            }else{
+                $.ajax({
+                    url:'${ctx}/category/queryLevelThreeByLevelTwo/' + levelTwoId,
+                    type:'get',
+                    success:function(data){
+                        var html = '<option value="0"> 请选择</option>';
+                        var len = data.length;
+                        alert(len);
+                        for(var i = 0; i < len; i++){
+                            html += '<option value="' + data[i].id + '">' + data[i].categoryName + '</option>';
+                        }
+                        $('#levelThree').html(html);
+                        form.render();
+                    }
+                })
+            }
+        })
+
+        // form.on('select(levelOne)',function(){
+        //     var html = '<option>手机</option>';
+        //     // alert(1231312321);
+        //     alert($('#levelTwo').html());
+        //       $('#levelTwo').html(html)
+        //     form.render();
+        // })
+
     })
 </script>
 

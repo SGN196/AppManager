@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.caiqian.mapper.AppCategoryMapper" >
+    <select id="queryAllLevelOne" resultType="com.caiqian.Bean.AppCategory">
+       select * from  app_category where parent_Id is null
+    </select>
 
+    <select id="queryLevelTwoByLevelOne" resultType="com.caiqian.Bean.AppCategory">
+        select * from app_category where parent_Id = #{id}
+    </select>
+
+    <select id="queryLevelThreeByLevelTwo" resultType="com.caiqian.Bean.AppCategory">
+            select * from app_category where parent_Id = #{id}
+    </select>
 </mapper>
