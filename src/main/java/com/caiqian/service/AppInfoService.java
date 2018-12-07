@@ -2,6 +2,7 @@ package com.caiqian.service;
 
 import com.caiqian.Bean.AppInfo;
 import com.caiqian.Bean.DataDictionary;
+import com.caiqian.dto.AppInfoDTO;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
@@ -12,4 +13,6 @@ public interface AppInfoService {
     List<DataDictionary> queryAllAppStatus();
 
     List<DataDictionary> queryAllAppFlatforms();
+
+    PageInfo<AppInfo> query(AppInfoDTO appInfoDTO);
 }

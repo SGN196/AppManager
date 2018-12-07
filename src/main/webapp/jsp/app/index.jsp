@@ -32,19 +32,25 @@
 
             <!-- 条件搜索 -->
 
-            <form class="layui-form" action="">
+            <form class="layui-form" action="${ctx}/app/query" method="get">
                 <div class="layui-inline">
                     <label class="layui-form-label">软件名称</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="number" autocomplete="off" class="layui-input">
+                        <input type="text" name="softwareName" autocomplete="off" class="layui-input">
                     </div>
-                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div class="layui-inline">
+                    <div class="layui-input-inline">
+                        <input type="hidden" name="pageNum" value="1">
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="layui-inline">
                     <label class="layui-form-label">APP状态</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="aihao">
+                        <select lay-filter="aihao" name="appStatus">
 
-                            <option value="0" selected="">-请选择-</option>
+                            <option value="" selected="">-请选择-</option>
                             <c:forEach items="${appStatus}" var="obj">
                                 <option value="${obj.id}">${obj.valueName}</option>
 
@@ -57,8 +63,8 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">所属平台</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="aihao">
-                           <option type="0" >-请选择-</option>
+                        <select lay-filter="aihao" id="appFlatforms" name="appFlatforms">
+                           <option type="" >-请选择-</option>
                             <c:forEach items="${appFlatforms}" var="obj">
                                 <option value="${obj.id}">${obj.valueName}</option>
 
@@ -71,9 +77,9 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">一级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" id="levelOne" lay-filter="levelOne">
-                            <option>-请选择-</option>
-                            <c:forEach items="${levelOne}" var="obj">
+                        <select name="levelOne" id="levelOne" lay-filter="aihao"  >
+                            <%--<option type="">-请选择-</option>--%>
+                            <c:forEach items="${levelOnex}" var="obj">
                                 <option value="${obj.id}">${obj.categoryName }</option>
                             </c:forEach>
                         </select>
@@ -82,18 +88,24 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">二级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="levelTwo" id="levelTwo">
-                            <option value="0">-请选择-</option>
+                        <select name="levelTwo" lay-filter="levelTwo" id="levelTwo">
+                            <option value="">-请选择-</option>
                         </select>
                     </div>
                 </div>
                 <div class="layui-inline">
                     <label class="layui-form-label">三级分类</label>
                     <div class="layui-input-block">
-                        <select name="interest" lay-filter="levelThree" id="levelThree">
-                            <option value="0">-请选择-</option>
+                        <select name="levelThree" lay-filter="levelThree" id="levelThree">
+                            <option value="">-请选择-</option>
 
                         </select>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+
                     </div>
                 </div>
             </form>
@@ -121,19 +133,21 @@
                             <td>${obj.softwareName}</td>
                             <td>${obj.apkName}</td>
                             <td>${obj.softwareSize} M</td>
-                            <td>
-                                <c:if test="${obj.flatformId eq 1}">手机</c:if>
-                                <c:if test="${obj.flatformId eq 2}">平板</c:if>
-                                <c:if test="${obj.flatformId eq 3}">手机、平板</c:if>
-                            </td>
+                            <td>${obj.flatform.valueName}</td>
+                            <%--<td>--%>
+                                <%--<c:if test="${obj.flatformId }">手机</c:if>--%>
+                                <%--<c:if test="${obj.flatformId eq 2}">平板</c:if>--%>
+                                <%--<c:if test="${obj.flatformId eq 3}">手机、平板</c:if>--%>
+                            <%--</td>--%>
                             <td>${obj.categoryLevel1.categoryName} -> ${obj.categoryLevel2.categoryName} -> ${obj.categoryLevel3.categoryName} </td>
-                            <td>
-                                <c:if test="${obj.status eq 1}">待审核 </c:if>
-                                <c:if test="${obj.status eq 2}">审核通过</c:if>
-                                <c:if test="${obj.status eq 3}">审核不通过</c:if>
-                                <c:if test="${obj.status eq 4}">已上架</c:if>
-                                <c:if test="${obj.status eq 5}">已下架</c:if>
-                            </td>
+                            <%--<td>--%>
+                                <%--<c:if test="${obj.status eq 1}">待审核 </c:if>--%>
+                                <%--<c:if test="${obj.status eq 2}">审核通过</c:if>--%>
+                                <%--<c:if test="${obj.status eq 3}">审核不通过</c:if>--%>
+                                <%--<c:if test="${obj.status eq 4}">已上架</c:if>--%>
+                                <%--<c:if test="${obj.status eq 5}">已下架</c:if>--%>
+                            <%--</td>--%>
+                            <td>${obj.appStatus.valueName}</td>
                             <td>${obj.downloads}</td>
                             <td>${obj.newAppVersion.versionNo}</td>
                             <td><button>点击操作</button></td>
@@ -144,10 +158,10 @@
                             共${page.total} 条记录 第 ${page.pageNum}/ ${page.pages}页
                         </td>
                         <td colspan="8">
-                            <a href="">首页</a>
-                            <a href="">上一页</a>
-                            <a href="">下一页</a>
-                            <a href="">尾页</a>
+                            <a href="javascript:void(0);" page="first">首页</a>
+                            <a href="javascript:void(0);" page="prev">上一页</a>
+                            <a href="javascript:void(0);" page="next">下一页</a>
+                            <a href="javascript:void(0);" page="last">尾页</a>
 
                         </td>
                     </tr>
@@ -187,14 +201,14 @@
 
         form.on('select(levelOne)', function(){
             var levelOneId = $('#levelOne').val();
-            if(levelOneId == 0){
+            if(levelOneId == ''){
                 return;
             }else{
                 $.ajax({
                     url:'${ctx}/category/queryLevelTwoByLevelOne/' + levelOneId,
                     type:'get',
                     success:function(data){
-                        var html = '<option value="0">-请选择-</option>';
+                        var html = '<option value="">-请选择-</option>';
                         var len = data.length;
                         for(var i = 0; i < len; i++){
                             html += '<option value="' + data[i].id + '">' + data[i].categoryName + '</option>';
@@ -207,14 +221,14 @@
         })
         form.on('select(levelTwo)', function(){
             var levelTwoId = $('#levelTwo').val();
-            if(levelTwoId == 0){
+            if(levelTwoId == ''){
                 return;
             }else{
                 $.ajax({
                     url:'${ctx}/category/queryLevelThreeByLevelTwo/' + levelTwoId,
                     type:'get',
                     success:function(data){
-                        var html = '<option value="0"> 请选择</option>';
+                        var html = '<option value=""> 请选择</option>';
                         var len = data.length;
                         for(var i = 0; i < len; i++){
                             html += '<option value="' + data[i].id + '">' + data[i].categoryName + '</option>';
@@ -226,15 +240,52 @@
             }
         })
 
+
+        //分页事件====================================================
+        $('a[page]').click(function () {
+
+            var pageNum = 1;
+            var currPage = '${page.pageNum}';
+            var totalPages ='${page.pages}';
+            var v = $(this).attr('page');
+            alert(v);
+            switch (v) {
+                case "first": pageNum = 1; break;
+                case "prev":
+                    pageNum = parseInt(currPage) - 1;
+                    if(pageNum < 1)
+                        pageNum = 1;
+                    break;
+                case 'next':
+                    pageNum = parseInt(currPage) + 1;
+                    if(pageNum > totalPages){
+                        pageNum = totalPages;
+                    }
+                    break;
+                case "last":
+                    pageNum = totalPages;
+                    break;
+            }
+            $('input[name=pageNum]').val(pageNum)
+            $('form').submit();
+        })
+
+
+
         // form.on('select(levelOne)',function(){
         //     var html = '<option>手机</option>';
         //     // alert(1231312321);
         //     alert($('#levelTwo').html());
         //       $('#levelTwo').html(html)
+
+
+
+
+
         //     form.render();
         // })
 
-    })
+    });
 </script>
 
 </body>

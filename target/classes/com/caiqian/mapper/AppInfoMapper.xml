@@ -3,60 +3,157 @@
 <mapper namespace="com.caiqian.mapper.AppInfoMapper" >
 
     <resultMap id="base" type="com.caiqian.Bean.AppInfo">
-        <id property="id" column="appId"></id>
-        <result property="softwareName" column="softwareName"></result>
-        <result property="apkName" column="softwareName"></result>
-        <result property="softwareSize" column="softwareSize" javaType="java.math.BigDecimal"></result>
-        <result property="flatformId" column="flatformId"></result>
-        <result property="status" column="status"></result>
+        <id property="id" column="app_id"></id>
+        <result property="apkName" column="apk_name"></result>
+        <result property="softwareName" column="software_name"></result>
+
+        <result property="softwareSize" column="software_Size" javaType="java.math.BigDecimal"></result>
+        <!--<result property="flatformId" column="flatform_Id"></result>-->
+        <!--<result property="status" column="status"></result>-->
         <result property="downloads" column="downloads"></result>
     </resultMap>
 
-    <resultMap id="appInfoWithThreeCategoryAndVersion" type="com.caiqian.Bean.AppInfo" extends="base">
+    <resultMap id="appInfoDetail" type="com.caiqian.Bean.AppInfo" extends="base">
+        <association property="flatform" javaType="com.caiqian.Bean.DataDictionary">
+            <result property="valueName" column="value_name"></result>
+        </association>
+        <association property="appStatus" javaType="com.caiqian.Bean.DataDictionary">
+            <result property="valueName" column="app_status"></result>
+        </association>
         <association property="newAppVersion" javaType="com.caiqian.Bean.AppVersion">
             <id property="id" column="versionId"></id>
-            <result property="versionNo" column="version_No"></result>
+            <result property="versionNo" column="version_no"></result>
         </association>
         <association property="categoryLevel1" javaType="com.caiqian.Bean.AppCategory">
-            <result property="categoryName" column="categoryLevel1Name"/>
+            <result property="categoryName" column="category_level_one_name"/>
         </association>
         <association property="categoryLevel2" javaType="com.caiqian.Bean.AppCategory">
-            <result property="categoryName" column="categoryLevel2Name"/>
+            <result property="categoryName" column="category_level_two_name"/>
         </association>
         <association property="categoryLevel3" javaType="com.caiqian.Bean.AppCategory">
-            <result property="categoryName" column="categoryLevel3Name"/>
+            <result property="categoryName" column="category_level_three_name"/>
         </association>
     </resultMap>
 
+    <!--<resultMap id="appInfoWithThreeCategoryAndVersion" type="com.caiqian.Bean.AppInfo" extends="base">-->
+        <!--<association property="newAppVersion" javaType="com.caiqian.Bean.AppVersion">-->
+            <!--<id property="id" column="version_Id"></id>-->
+            <!--<result property="versionNo" column="version_No"></result>-->
+        <!--</association>-->
+        <!--<association property="categoryLevel1" javaType="com.caiqian.Bean.AppCategory">-->
+            <!--<result property="categoryName" column="categoryLevel1Name"/>-->
+        <!--</association>-->
+        <!--<association property="categoryLevel2" javaType="com.caiqian.Bean.AppCategory">-->
+            <!--<result property="categoryName" column="categoryLevel2Name"/>-->
+        <!--</association>-->
+        <!--<association property="categoryLevel3" javaType="com.caiqian.Bean.AppCategory">-->
+            <!--<result property="categoryName" column="categoryLevel3Name"/>-->
+        <!--</association>-->
+    <!--</resultMap>-->
 
-    <select id="queryByDevUserId" resultMap="appInfoWithThreeCategoryAndVersion">
+
+    <!--<select id="queryByDevUserId" resultMap="appInfoWithThreeCategoryAndVersion">-->
+        <!--SELECT-->
+            <!--t1.id appId,-->
+            <!--t1.software_Name,-->
+            <!--t1.APK_Name,-->
+            <!--t1.software_Size,-->
+            <!--t1.flatform_Id,-->
+            <!--t1.`status`,-->
+            <!--t1.downloads,-->
+            <!--t1.version_Id,-->
+            <!--tc1.category_Name AS categoryLevel1Name,-->
+            <!--tc2.category_Name AS categoryLevel2Name,-->
+            <!--tc3.category_Name AS categoryLevel3Name,-->
+            <!--t3.version_No-->
+        <!--FROM-->
+            <!--app_info t1-->
+                <!--LEFT JOIN-->
+            <!--app_category tc1 ON t1.category_Level1 = tc1.id-->
+                <!--LEFT JOIN-->
+            <!--app_category tc2 ON t1.category_Level2 = tc2.id-->
+                <!--LEFT JOIN-->
+            <!--app_category tc3 ON t1.category_Level3 = tc3.id-->
+                <!--LEFT JOIN-->
+            <!--app_version t3 ON t1.version_Id = t3.id,-->
+            <!--dev_user t4-->
+        <!--<where>-->
+            <!--t1.dev_Id = t4.id AND t4.id = #{devUserId}-->
+        <!--</where>-->
+    <!--</select>-->
+
+    <select id="query" resultMap="appInfoDetail">
+        <!--SELECT   就是日了狗了，别改， 改就是报错-->
+        <!--t1.software_Name,-->
+        <!--t1.APK_Name,-->
+        <!--t1.software_Size,-->
+        <!--t2.value_name,-->
+        <!--t3.category_Name AS category_level_one_name,-->
+        <!--t4.category_Name AS category_level_two_name,-->
+        <!--t5.category_Name AS category_level_three_name-->
+        <!--FROM-->
+        <!--app_info t1,-->
+        <!--data_dictionary t2,-->
+        <!--app_category t3,-->
+        <!--app_category t4,-->
+        <!--app_category t5,-->
+        <!--data_dictionary t6,-->
+        <!--app_version t7-->
+    <!--<where>-->
+        <!--AND 		t1.status = t2.id-->
+        <!--AND t1.status = t6.id-->
+        <!--AND t1.category_Level1 = t3.id-->
+        <!--AND t1.category_Level2 = t4.id-->
+        <!--AND t1.category_Level3 = t5.id-->
+        <!--AND t1.version_id = t7.id-->
         SELECT
-            t1.id appId,
-            t1.softwareName,
-            t1.APKName,
-            t1.softwareSize,
-            t1.flatformId,
-            t1.`status`,
-            t1.downloads,
-            t1.versionId,
-            tc1.category_Name AS categoryLevel1Name,
-            tc2.category_Name AS categoryLevel2Name,
-            tc3.category_Name AS categoryLevel3Name,
-            t3.version_No
+        t1.software_Name,
+        t1.downloads,
+        t1.APK_Name,
+        t1.software_Size,
+        t2.value_name,
+        t3.category_Name AS category_level_one_name,
+        t4.category_Name AS category_level_two_name,
+        t5.category_Name AS category_level_three_name,
+        t6.value_name app_status,
+        t7.version_no
         FROM
-            app_info t1
-                LEFT JOIN
-            app_category tc1 ON t1.categoryLevel1 = tc1.id
-                LEFT JOIN
-            app_category tc2 ON t1.categoryLevel2 = tc2.id
-                LEFT JOIN
-            app_category tc3 ON t1.categoryLevel3 = tc3.id
-                LEFT JOIN
-            app_version t3 ON t1.versionId = t3.id,
-            dev_user t4
+        app_info t1
+        left join data_dictionary t2 on t1.flatform_Id = t2.value_id
+        left join app_category t3 on t1.category_level1 = t3.id
+        left join app_category t4 on t1.category_level2 = t4.id
+        left join app_category t5 on t1.category_level3 = t5.id
+        left join data_dictionary t6 on t1.status = t6.value_id
+        left join app_version t7 on t1.version_Id = t7.id
+        left join dev_user t8 on t1.dev_id = t8.id
         <where>
-            t1.devId = t4.id AND t4.id = #{devUserId}
+            t2.type_code = 'APP_FLATFORM' and
+            t6.type_code = 'APP_STATUS'
+
+            <if test="appFlatform != null">
+                and t1.flatform_Id = #{appFlatform}
+            </if>
+            <if test="appStatus != null">
+                and t1.status = #{appStatus}
+            </if>
+            <if test="levelOne != null">
+                AND t1.category_Level1 = #{levelOne}
+            </if>
+            <if test="levelTwo != null">
+                AND t1.category_Level2 = #{levelTwo}
+            </if>
+            <if test="levelThree != null">
+                AND t1.category_Level3 = #{levelThree}
+            </if>
+            <if test="softwareName != null and softwareName != ''">
+                AND t1.software_Name like  concat('%', #{softwareName},'%')
+            </if>
         </where>
+    <!--</where>-->
+
+
+
+
     </select>
 
 </mapper>

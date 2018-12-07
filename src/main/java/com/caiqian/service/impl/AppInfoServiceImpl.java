@@ -2,6 +2,8 @@ package com.caiqian.service.impl;
 
 import com.caiqian.Bean.AppInfo;
 import com.caiqian.Bean.DataDictionary;
+import com.caiqian.constant.CommonCodeConstant;
+import com.caiqian.dto.AppInfoDTO;
 import com.caiqian.mapper.AppInfoMapper;
 import com.caiqian.mapper.DataDictionaryMapper;
 import com.caiqian.service.AppInfoService;
@@ -23,11 +25,13 @@ public class AppInfoServiceImpl implements AppInfoService {
 
 
     @Override
-    public PageInfo<AppInfo> queryByDevUserId(long id,PageInfo pageInfo) {
+    public PageInfo<AppInfo> queryByDevUserId(long id,PageInfo pageInfo) {     //调用mapper的query方法
         //去第几页，页码的大小
         PageHelper.startPage(pageInfo.getPageNum(), pageInfo.getPageSize());
-
-        List<AppInfo> list = appInfoMapper.queryByDevUserId(id);
+        AppInfoDTO appInfoDTO = new AppInfoDTO();
+        appInfoDTO.setDevUserId(id);
+        System.out.println("00000000000000" + appInfoDTO.toString() + "0000000000000000000000000000");
+        List<AppInfo> list = appInfoMapper.query(appInfoDTO);           //在这里
 
         PageInfo<AppInfo> page = new PageInfo<AppInfo>(list);
         return page;
@@ -42,5 +46,15 @@ public class AppInfoServiceImpl implements AppInfoService {
     @Override
     public List<DataDictionary> queryAllAppFlatforms() {
         return dataDictionaryMapper.queryAllAppFlatforms();
+    }
+
+    @Override
+    public PageInfo<AppInfo> query(AppInfoDTO appInfoDTO) {
+
+        PageHelper.startPage(appInfoDTO.getPageNum(), CommonCodeConstant.PAGE_SIZE);
+        List <AppInfo> list =  appInfoMapper.query(appInfoDTO);
+        PageInfo<AppInfo> page = new PageInfo<AppInfo>(list);
+
+        return page;
     }
 }

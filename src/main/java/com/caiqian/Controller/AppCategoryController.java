@@ -23,10 +23,7 @@ public class AppCategoryController {
     @ResponseBody
     @RequestMapping("/queryLevelTwoByLevelOne/{levelOneId}")
     public List<AppCategory> queryLevelTwoByLevelOne(@PathVariable("levelOneId") Integer id){
-        System.out.println("id ==============" + id);
         List<AppCategory> levelTwo =  appCategoryService.queryLevelTwoByLevelOne(id);
-
-
         return levelTwo;
     }
 

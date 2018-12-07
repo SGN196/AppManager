@@ -25,9 +25,9 @@ public class AppInfo {
 
     private Long status;                //审核状态：1、待审核 2、审核通过 3、审核不通过 4、已上架 5、已下架
 
-    private Date onsaleDate;
+    private Date onSaleDate;
 
-    private Date offsaleDate;
+    private Date offSaleDate;
 
     private Long flatformId;            //所属平台  1、手机    2、平板 3、通用
 
@@ -47,17 +47,38 @@ public class AppInfo {
 
     private AppCategory categoryLevel2;
 
+
     private AppCategory categoryLevel3;
 
-    private String logopicPath;
+    private String logoPicPath;
 
-    private String logolocPath;
+    private String logoLocPath;
 
     private Long versionId;
 
     private List<AppVersion> appVersions;
 
     private AppVersion newAppVersion;
+
+    private DataDictionary flatform;
+
+    private DataDictionary appStatus;
+
+    public DataDictionary getFlatform() {
+        return flatform;
+    }
+
+    public void setFlatform(DataDictionary flatform) {
+        this.flatform = flatform;
+    }
+
+    public DataDictionary getAppStatus() {
+        return appStatus;
+    }
+
+    public void setAppStatus(DataDictionary appStatus) {
+        this.appStatus = appStatus;
+    }
 
     public AppVersion getNewAppVersion() {
         return newAppVersion;
@@ -69,6 +90,37 @@ public class AppInfo {
 
     private DevUser devUser;
 
+    public Date getOnSaleDate() {
+        return onSaleDate;
+    }
+
+    public void setOnSaleDate(Date onSaleDate) {
+        this.onSaleDate = onSaleDate;
+    }
+
+    public Date getOffSaleDate() {
+        return offSaleDate;
+    }
+
+    public void setOffSaleDate(Date offSaleDate) {
+        this.offSaleDate = offSaleDate;
+    }
+
+    public String getLogoPicPath() {
+        return logoPicPath;
+    }
+
+    public void setLogoPicPath(String logoPicPath) {
+        this.logoPicPath = logoPicPath;
+    }
+
+    public String getLogoLocPath() {
+        return logoLocPath;
+    }
+
+    public void setLogoLocPath(String logoLocPath) {
+        this.logoLocPath = logoLocPath;
+    }
 
 
     public AppCategory getCategoryLevel1() {
@@ -191,21 +243,6 @@ public class AppInfo {
         this.status = status;
     }
 
-    public Date getOnsaleDate() {
-        return onsaleDate;
-    }
-
-    public void setOnsaleDate(Date onsaleDate) {
-        this.onsaleDate = onsaleDate;
-    }
-
-    public Date getOffsaleDate() {
-        return offsaleDate;
-    }
-
-    public void setOffsaleDate(Date offsaleDate) {
-        this.offsaleDate = offsaleDate;
-    }
 
     public Long getFlatformId() {
         return flatformId;
@@ -255,21 +292,7 @@ public class AppInfo {
         this.modifyDate = modifyDate;
     }
 
-    public String getLogopicPath() {
-        return logopicPath;
-    }
 
-    public void setLogopicPath(String logopicPath) {
-        this.logopicPath = logopicPath;
-    }
-
-    public String getLogolocPath() {
-        return logolocPath;
-    }
-
-    public void setLogolocPath(String logolocPath) {
-        this.logolocPath = logolocPath;
-    }
 
     public Long getVersionId() {
         return versionId;

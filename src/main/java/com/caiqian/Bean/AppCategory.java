@@ -22,6 +22,14 @@ public class AppCategory {
 
     private List<AppInfo> appInfos;
 
+    public List<AppInfo> getAppInfos() {
+        return appInfos;
+    }
+
+    public void setAppInfos(List<AppInfo> appInfos) {
+        this.appInfos = appInfos;
+    }
+
     public AppCategory() {
     }
 
