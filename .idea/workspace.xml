@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="" />
+    <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +152,7 @@
         <entry file="file://$PROJECT_DIR$/src/log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -733,7 +735,7 @@
       <workItem from="1544058061642" duration="2762000" />
       <workItem from="1544063479457" duration="4579000" />
       <workItem from="1544069346236" duration="258000" />
-      <workItem from="1544070332340" duration="74553000" />
+      <workItem from="1544070332340" duration="75085000" />
     </task>
     <servers />
   </component>
@@ -770,7 +772,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211319000" />
+    <option name="totallyTimeSpent" value="211851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="233" width="1590" height="1358" extended-state="0" />
@@ -1269,7 +1271,7 @@
     <entry file="file://$PROJECT_DIR$/src/log.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
         </state>
       </provider>
     </entry>
