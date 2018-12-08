@@ -81,8 +81,170 @@
             <!--t1.dev_Id = t4.id AND t4.id = #{devUserId}-->
         <!--</where>-->
     <!--</select>-->
+    <insert id="add">
+
+
+      insert into app_info
+         <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="softwareName != null and softwareName != ''">
+                ,software_name
+            </if>
+            <if test="apkName != null and apkName != ''">
+                ,apk_name
+            </if>
+            <if test="supportRom != null and supportRom != ''">
+                ,support_rom
+            </if>
+            <if test="interfaceLanguage != null and interfaceLanguage != ''">
+                ,interface_language
+            </if>
+            <if test="softwareSize != null and softwareSize != ''">
+                ,software_size
+            </if>
+            <if test="updateDate != null and updateDate != ''">
+                ,update_date
+            </if>
+            <if test="devUser != null and devUser.id != ''">
+                ,dev_id
+            </if>
+
+            <if test="appInfo != null and appInfo != ''">
+                ,app_info
+            </if>
+            <if test="status != null and status != ''">
+                ,status
+            </if>
+            <if test="appStatus != null and appStatus.valueId != null">
+                ,status
+            </if>
+            <if test="onSaleDate != null and onSaleDate != ''">
+                ,on_sale_date
+            </if>
+            <if test="flatformId != null and flatformId != ''">
+                ,flatform_id
+            </if>
+            --                 这两句可能出错，视频使用的是下面的判断
+            <if test="flatform != null and flatform.valueId != null">
+                ,flatform_id
+            </if>
+
+            <if test="categoryLevel1 != null and categoryLevel1.id != null">
+                ,category_level1
+            </if>
+            <if test="categoryLevel2 != null and categoryLevel2.id != null">
+                ,category_level2
+            </if>
+            <if test="categoryLevel3 != null and categoryLevel3.id != null">
+                ,category_level3
+            </if>
+            <if test="downloads != null and downloads != ''">
+                ,downloads
+            </if>
+            <if test="devUser != null and devUser.id != null">
+                ,created_by
+            </if>
+            <if test="modifyBy != null and modifyBy != ''">
+                ,modify_by
+            </if>
+            <if test="modifyDate != null and modifyDate != ''">
+                ,modify_date
+            </if>
+            <if test="logoPicPath != null and logoPicPath != ''">
+                ,logo_pic_path
+            </if>
+            <if test="logoLocPath != null and logoLocPath != ''">
+                ,logo_loc_path
+            </if>
+            <if test="newAppVersion != null and newAppVersion.id != null">
+                ,version_id
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" prefixOverrides=",">
+            <if test="softwareName != null and softwareName != ''">
+                ,#{softwareName}
+            </if>
+            <if test="apkName != null and apkName != ''">
+                ,#{apkName}
+            </if>
+            <if test="supportRom != null and supportRom != ''">
+                ,#{supportRom}
+            </if>
+            <if test="interfaceLanguage != null and interfaceLanguage != ''">
+                ,#{interfaceLanguage}
+            </if>
+            <if test="softwareSize != null and softwareSize != ''">
+                ,#{softwareSize}
+            </if>
+            <if test="updateDate != null and updateDate != ''">
+                ,#{updateDate}
+            </if>
+            <if test="devUser != null and devUser.id != ''">
+                ,#{devUser.id}
+            </if>
+
+            <if test="appInfo != null and appInfo != ''">
+                ,#{appInfo}
+            </if>
+            <if test="status != null and status != ''">
+                ,#{status}
+            </if>
+            <if test="appStatus != null and appStatus.valueId != null">
+                ,#{appStatus.valueId}
+            </if>
+            <if test="onSaleDate != null and onSaleDate != ''">
+                ,#{onSaleDate}
+            </if>
+            <if test="flatformId != null and flatformId != ''">
+                ,#{flatformId}
+            </if>
+
+            <if test="flatform != null and flatform.valueId != null">
+                ,#{flatform.valueId}
+            </if>
+
+            <if test="categoryLevel1 != null and categoryLevel1.id != null">
+                ,#{categoryLevel1.id}
+            </if>
+            <if test="categoryLevel2 != null and categoryLevel2.id != null">
+                ,#{categoryLevel2.id}
+            </if>
+            <if test="categoryLevel3 != null and categoryLevel3.id != null">
+                ,#{categoryLevel3.id}
+            </if>
+            <if test="downloads != null and downloads != ''">
+                ,#{downloads}
+            </if>
+            <if test="devUser != null and devUser.id != null">
+                ,#{devUser.id}
+            </if>
+            <if test="modifyBy != null and modifyBy != ''">
+                ,#{modifyBy}
+            </if>
+            <if test="modifyDate != null and modifyDate != ''">
+                ,#{modifyDate}
+            </if>
+            <if test="logoPicPath != null and logoPicPath != ''">
+                ,#{logoPicPath}
+            </if>
+            <if test="logoLocPath != null and logoLocPath != ''">
+                ,#{logoLocPath}
+            </if>
+            <if test="newAppVersion != null and newAppVersion.id != null">
+                ,#{newAppVersion.id}
+            </if>
+
+
+        </trim>
+      (software_name, apk_name, support_rom, interface_language,
+                     software_size, update_date, dev_id, app_info, status, on_sale_date,
+                     off_sale_date, flatform_id, category_level3, downloads, created_by,
+                     creation_date, modify_by, modify_date, category_level1, category_level2,
+                     logo_pic_path, logo_loc_path, version_id) value()
+    </insert>
+
 
     <select id="query" resultMap="appInfoDetail">
+
         <!--SELECT   就是日了狗了，别改， 改就是报错-->
         <!--t1.software_Name,-->
         <!--t1.APK_Name,-->

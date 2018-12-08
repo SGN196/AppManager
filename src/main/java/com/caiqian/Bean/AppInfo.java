@@ -43,6 +43,8 @@ public class AppInfo {
 
     private Date modifyDate;
 
+    private DevUser devUser;
+
     private AppCategory categoryLevel1;
 
     private AppCategory categoryLevel2;
@@ -88,7 +90,7 @@ public class AppInfo {
         this.newAppVersion = newAppVersion;
     }
 
-    private DevUser devUser;
+
 
     public Date getOnSaleDate() {
         return onSaleDate;
@@ -305,4 +307,5 @@ public class AppInfo {
     public AppInfo() {
 
     }
+
 }

@@ -15,4 +15,6 @@ public interface AppInfoService {
     List<DataDictionary> queryAllAppFlatforms();
 
     PageInfo<AppInfo> query(AppInfoDTO appInfoDTO);
+
+    boolean add(AppInfo appInfo, long userId);
 }

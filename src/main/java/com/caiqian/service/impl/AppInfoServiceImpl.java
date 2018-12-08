@@ -2,6 +2,7 @@ package com.caiqian.service.impl;
 
 import com.caiqian.Bean.AppInfo;
 import com.caiqian.Bean.DataDictionary;
+import com.caiqian.Bean.DevUser;
 import com.caiqian.constant.CommonCodeConstant;
 import com.caiqian.dto.AppInfoDTO;
 import com.caiqian.mapper.AppInfoMapper;
@@ -12,6 +13,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -56,5 +58,26 @@ public class AppInfoServiceImpl implements AppInfoService {
         PageInfo<AppInfo> page = new PageInfo<AppInfo>(list);
 
         return page;
+    }
+
+    @Override
+    public boolean add(AppInfo appInfo, long userId) {
+        appInfo.setDevId(userId);
+        appInfo.setCreationDate(new Date());
+        //创建devUser对象
+        DevUser devUser = new DevUser();
+        devUser.setId(userId);
+        appInfo.setDevUser(devUser);
+
+        //创建DataDictionary对象
+        DataDictionary status = new DataDictionary();
+        status.setTypeCode("APP_STATUS");
+        status.setValueId(CommonCodeConstant.APP_STATUS_AUDITED);
+        appInfo.setAppStatus(status);
+        appInfoMapper.add(appInfo);
+
+
+
+        return appInfoMapper.add(appInfo);
     }
 }

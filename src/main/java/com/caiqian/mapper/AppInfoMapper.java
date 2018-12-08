@@ -12,4 +12,6 @@ public interface AppInfoMapper {
 //    public List<AppInfo> queryByDevUserId(@Param("devUserId")long id);
 
     List<AppInfo> query(AppInfoDTO appInfoDTO);
+
+    boolean add(AppInfo appInfo);
 }

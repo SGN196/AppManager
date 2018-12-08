@@ -43,14 +43,10 @@ public class DevAppController {
      */
     @RequestMapping("/query")
     public String query(AppInfoDTO appInfoDTO, Model model, HttpSession session){
-        System.out.println(appInfoDTO.getLevelOne() + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Object  obj = session.getAttribute("USER_ID");
         if(obj != null){
-//            long level1 = Long.parseLong(levelOne);
-
             long userId = (long) obj;
             appInfoDTO.setDevUserId(userId);
-//            appInfoDTO.setLevelOne(level1);
             PageInfo<AppInfo> pageInfo = appInfoService.query(appInfoDTO);
 
             List<DataDictionary> appStatus =  appInfoService.queryAllAppStatus();
@@ -62,6 +58,7 @@ public class DevAppController {
             model.addAttribute("appFlatforms", appFlatforms);
             model.addAttribute("page", pageInfo);
             model.addAttribute("levelOnex", levelOne);
+            model.addAttribute("appInfoDTO", appInfoDTO);
 
             return "app/index";
         }else{
@@ -72,7 +69,6 @@ public class DevAppController {
 
     @RequestMapping("/index/devId/{id}")
     public String index(@PathVariable("id") long id, Model model, HttpSession session){      //APP维护页面
-        System.out.println(id);
         session.setAttribute("USER_ID", id);
         PageInfo<AppInfo> pageInfo = new PageInfo<>();
         pageInfo.setPageSize(5);
@@ -89,6 +85,28 @@ public class DevAppController {
         model.addAttribute("page", pageInfo);
         model.addAttribute("levelOnex", levelOne);
         return "app/index";
+    }
+
+    @RequestMapping("/toAdd")
+    public String toAdd(Model model){
+
+        List<DataDictionary> appStatus =  appInfoService.queryAllAppStatus();
+        List<DataDictionary> appFlatforms =  appInfoService.queryAllAppFlatforms();
+        List<AppCategory> levelOne = appCategoryService.queryAllLevelOne();
+
+        model.addAttribute("appStatus", appStatus);
+        model.addAttribute("appFlatforms", appFlatforms);
+        model.addAttribute("levelOnex", levelOne);
+
+        return "app/add";
+    }
+
+    @RequestMapping("/add")
+    public String add(AppInfo appInfo, HttpSession httpSession){
+        long userId = Long.parseLong(httpSession.getAttribute("USER_ID").toString());
+        System.out.println(appInfoService.add(appInfo, userId));
+        return "app/index";
+
     }
 
 }
