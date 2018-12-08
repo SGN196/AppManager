@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
-    </list>
+    <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,8 +149,8 @@
       <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/log.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="36">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -735,7 +733,7 @@
       <workItem from="1544058061642" duration="2762000" />
       <workItem from="1544063479457" duration="4579000" />
       <workItem from="1544069346236" duration="258000" />
-      <workItem from="1544070332340" duration="74213000" />
+      <workItem from="1544070332340" duration="74553000" />
     </task>
     <servers />
   </component>
@@ -772,7 +770,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210979000" />
+    <option name="totallyTimeSpent" value="211319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="233" width="1590" height="1358" extended-state="0" />
@@ -1270,8 +1268,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="36">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
