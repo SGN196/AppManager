@@ -7,8 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" afterDir="false" />
@@ -21,11 +24,23 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/template2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/constant/CommonCodeConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/constant/CommonCodeConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AppManager/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/AppManager/template2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/constant/CommonCodeConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/constant/CommonCodeConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -157,11 +172,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppInfoMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppInfoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="683">
               <caret line="199" selection-start-line="199" selection-end-line="199" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -744,7 +768,7 @@
       <workItem from="1544058061642" duration="2762000" />
       <workItem from="1544063479457" duration="4579000" />
       <workItem from="1544069346236" duration="258000" />
-      <workItem from="1544070332340" duration="73309000" />
+      <workItem from="1544070332340" duration="73322000" />
     </task>
     <servers />
   </component>
@@ -781,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210075000" />
+    <option name="totallyTimeSpent" value="210088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="233" width="1590" height="1358" extended-state="0" />
@@ -807,10 +831,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18337408" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18337408" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32971373" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.32971373" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9029004" visible="true" weight="0.18276763" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9029004" visible="true" weight="0.18276763" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1008,13 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="37" column="66" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -1281,6 +1298,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
           <caret line="199" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
