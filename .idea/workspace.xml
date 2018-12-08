@@ -7,40 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/constant/CommonCodeConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/constant/CommonCodeConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/constant/CommonCodeConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/constant/CommonCodeConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AppManager/template2.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/constant/CommonCodeConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/constant/CommonCodeConstant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -184,8 +151,8 @@
       <file leaf-file-name="log.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/log.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -291,7 +258,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppVersion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/dto/AppInfoDTO.java" />
-        <option value="$PROJECT_DIR$/src/log.txt" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" />
@@ -302,6 +268,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/log.txt" />
       </list>
     </option>
   </component>
@@ -768,7 +735,7 @@
       <workItem from="1544058061642" duration="2762000" />
       <workItem from="1544063479457" duration="4579000" />
       <workItem from="1544069346236" duration="258000" />
-      <workItem from="1544070332340" duration="73322000" />
+      <workItem from="1544070332340" duration="74213000" />
     </task>
     <servers />
   </component>
@@ -805,7 +772,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210088000" />
+    <option name="totallyTimeSpent" value="210979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="233" width="1590" height="1358" extended-state="0" />
@@ -1303,8 +1270,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
