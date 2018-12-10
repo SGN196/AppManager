@@ -14,4 +14,13 @@ public interface AppInfoMapper {
     List<AppInfo> query(AppInfoDTO appInfoDTO);
 
     boolean add(AppInfo appInfo);
+
+
+    int deleteById(Long id);
+
+    AppInfo queryById(Long id);
+
+    boolean updateById(AppInfo appInfo);
+
+    AppInfo queryDetailById(Long id);
 }

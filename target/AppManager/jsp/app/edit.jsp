@@ -1,11 +1,11 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: 11212
-  Date: 2018/12/8
-  Time: 15:32
+  Date: 2018/12/9
+  Time: 19:03
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -22,53 +22,54 @@
 
         <div style="padding: 15px;">
 
-            <form method="get" action="${ctx}/app/add" class="layui-form">
+            <form method="get" action="${ctx}/app/edit" class="layui-form">
+                <input type="hidden" value="${app.id}" name="id"/>
                 <div class="layui-form-item">
                     <label class="layui-form-label">软件名称</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="softwareName" placeholder="请输入软件名称" autocomplete="off" class="layui-input">
+                        <input type="text" name="softwareName" value="${app.softwareName}" placeholder="请输入软件名称" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">APK名称</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="apkName" placeholder="请输入APK名称"  autocomplete="off" class="layui-input">
+                        <input type="text" name="apkName" value="${app.apkName}" placeholder="请输入APK名称"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">支持ROM</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="supportRom" placeholder="请输入ROM名称" autocomplete="off" class="layui-input">
+                        <input type="text" name="supportRom" value="${app.supportRom}" placeholder="请输入ROM名称" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">界面语言</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="interfaceLanguage" placeholder="请输入界面语言" autocomplete="off" class="layui-input">
+                        <input type="text" name="interfaceLanguage" value="${app.interfaceLanguage}" placeholder="请输入界面语言" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">软件大小</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="softwareSize" placeholder="请输入软件大小"  autocomplete="off" class="layui-input">
+                        <input type="text" name="softwareSize" value="${app.softwareSize}" placeholder="请输入软件大小"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <hr>
                 <%------------------在逻辑上，新添加的APP都是未审核的，所以不需要APP状态这个选项-------------------------%>
                 <%--<div class="layui-inline">--%>
-                    <%--<label class="layui-form-label">APP状态</label>--%>
-                    <%--<div class="layui-input-block">--%>
-                        <%--<select lay-filter="status" name="status">--%>
+                <%--<label class="layui-form-label">APP状态</label>--%>
+                <%--<div class="layui-input-block">--%>
+                <%--<select lay-filter="status" name="status">--%>
 
-                            <%--<option value="" selected="">-请选择-</option>--%>
-                            <%--<c:forEach items="${appStatus}" var="obj">--%>
-                                <%--<option value="${obj.valueId}"  >${obj.valueName}</option>--%>
+                <%--<option value="" selected="">-请选择-</option>--%>
+                <%--<c:forEach items="${appStatus}" var="obj">--%>
+                <%--<option value="${obj.valueId}"  >${obj.valueName}</option>--%>
 
-                            <%--</c:forEach>--%>
+                <%--</c:forEach>--%>
 
 
-                        <%--</select>--%>
-                    <%--</div>--%>
+                <%--</select>--%>
+                <%--</div>--%>
                 <%--</div>--%>
                 <div class="layui-inline">
                     <label class="layui-form-label">所属平台</label>
@@ -76,7 +77,20 @@
                         <select lay-filter="appFlatform" id="appFlatform" name="flatformId">
                             <option value="" >-请选择-</option>
                             <c:forEach items="${appFlatforms}" var="obj">
-                                <option value="${obj.valueId}" >${obj.valueName}</option>
+                                <option value="${obj.valueId}" <c:if test="${app.flatform.valueId eq obj.valueId  }">selected</c:if> >${obj.valueName}</option>
+
+                            </c:forEach>
+
+                        </select>
+                    </div>
+                </div><br>
+                <div class="layui-inline">
+                    <label class="layui-form-label">审核状态</label>
+                    <div class="layui-input-block">
+                        <select lay-filter="appStatus" id="appStatus" name="status">
+                            <option value="" >-请选择-</option>
+                            <c:forEach items="${appStatus}" var="obj">
+                                <option value="${obj.valueId}" <c:if test="${app.appStatus.valueId eq obj.valueId  }">selected</c:if> >${obj.valueName}</option>
 
                             </c:forEach>
 
@@ -90,7 +104,7 @@
                         <select name="categoryLevel1.id" id="levelOne" lay-filter="levelOnex"  >
                             <option value="" >-请选择-</option>
                             <c:forEach items="${levelOnex}" var="obj">
-                                <option value="${obj.id}"  >${obj.categoryName }</option>
+                                <option value="${obj.id}" <c:if test="${app.categoryLevel1.id eq obj.id  }">selected</c:if> >${obj.categoryName }</option>
                             </c:forEach>
                         </select>
                     </div>
@@ -121,13 +135,14 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">应用简介</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="appInfo" placeholder="请输入应用简介" autocomplete="off" class="layui-input">
+                        <input type="text" width="200px" name="appInfo"  value="${app.appInfo}" placeholder="请输入应用简介" autocomplete="off" class="layui-input">
+                        <%--<textarea name="appInfo" value="${app.appInfo}" placeholder="请输入应用简介" autocomplete="off" class="layui-input" cols="30" rows="10"></textarea>--%>
                     </div>
 
                 </div><br>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1" >立即提交</button>
 
                     </div>
 
@@ -225,9 +240,8 @@
 
         $(function(){
             var levelOne = $('#levelOne').val();
-            alert(levelOne)
             if(levelOne != '' && levelOne != null){
-                var levelTwo = '${appInfoDTO.levelTwo}';
+                var levelTwo = '${app.categoryLevel2.id}';
                 if(levelTwo != null && levelTwo != undefined && levelTwo != ''){
                     $.ajax({
                         url:'${ctx}/category/queryLevelTwoByLevelOne/' + levelOne,
@@ -248,7 +262,7 @@
                             form.render();
                         }
                     });
-                    var levelThree = '${appInfoDTO.levelThree}';
+                    var levelThree = '${app.categoryLevel3.id}';
                     if(levelThree != null && levelThree != '' && levelThree != undefined){
                         $.ajax({
                             url:'${ctx}/category/queryLevelThreeByLevelTwo/' + levelTwo,
@@ -280,3 +294,4 @@
 </script>
 </body>
 </html>
+

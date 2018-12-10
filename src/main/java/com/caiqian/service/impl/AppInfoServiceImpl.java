@@ -13,7 +13,8 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
+
+import java.sql.Date;
 import java.util.List;
 
 @Service
@@ -63,7 +64,9 @@ public class AppInfoServiceImpl implements AppInfoService {
     @Override
     public boolean add(AppInfo appInfo, long userId) {
         appInfo.setDevId(userId);
-        appInfo.setCreationDate(new Date());
+//        appInfo.setCreationDate(new Date(System.currentTimeMillis())); //事实证明使用java.sql.date向数据库中的datetime类型的字段，进行传值是错误的决定
+        appInfo.setCreationDate(new java.util.Date());
+
         //创建devUser对象
         DevUser devUser = new DevUser();
         devUser.setId(userId);
@@ -74,10 +77,39 @@ public class AppInfoServiceImpl implements AppInfoService {
         status.setTypeCode("APP_STATUS");
         status.setValueId(CommonCodeConstant.APP_STATUS_AUDITED);
         appInfo.setAppStatus(status);
-        appInfoMapper.add(appInfo);
-
-
-
         return appInfoMapper.add(appInfo);
+    }
+
+
+    @Override
+    public boolean delete(Long id) {
+        if(id != null) {
+            int row = appInfoMapper.deleteById(id);
+            return row == 1 ? true : false;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean update(AppInfo appInfo) {
+        appInfo.setModifyDate(new java.util.Date());
+        appInfo.setUpdateDate(new java.util.Date());
+
+        if( appInfoMapper.updateById(appInfo)){
+
+            return true;
+        }else
+            return false;
+
+    }
+
+    @Override
+    public AppInfo queryById(Long id) {
+        return appInfoMapper.queryById(id);
+    }
+
+    @Override
+    public AppInfo queryDetailById(Long id) {
+        return appInfoMapper.queryDetailById(id);
     }
 }

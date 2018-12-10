@@ -7,7 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdf66db5-e236-4c92-8b10-1d49654e659c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_ad_promotion.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_app_category.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_app_info.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_app_version.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_backed_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_data_dictionary.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/appinfodb_dev_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/appDetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/WEB-INF/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/jsp/app/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/jsp/app/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AppManager/jsp/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/AppManager/jsp/common/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Bean/AppInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/Controller/DevAppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/mapper/AppInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/AppInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/caiqian/service/impl/AppInfoServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +64,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="appinfodb@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="appinfodb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="appinfodb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="appinfodb: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="appinfodb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="appinfodb: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="app_version: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DockManager">
@@ -40,8 +98,8 @@
             <file leaf-file-name="AppInfoDTO.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/dto/AppInfoDTO.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="252">
-                    <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+                  <state relative-caret-position="162">
+                    <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
                     <folding>
                       <element signature="e#292#293#0" expanded="true" />
                       <element signature="e#327#328#0" expanded="true" />
@@ -83,8 +141,19 @@
             <file leaf-file-name="AppInfo.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="234">
-                    <caret line="15" column="36" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="36" />
+                  <state relative-caret-position="403">
+                    <caret line="64" column="40" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="40" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                      <element signature="e#1840#1841#0" expanded="true" />
+                      <element signature="e#1873#1874#0" expanded="true" />
+                      <element signature="e#1926#1927#0" expanded="true" />
+                      <element signature="e#1970#1971#0" expanded="true" />
+                      <element signature="e#2008#2009#0" expanded="true" />
+                      <element signature="e#2041#2042#0" expanded="true" />
+                      <element signature="e#2094#2095#0" expanded="true" />
+                      <element signature="e#2138#2139#0" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -92,8 +161,8 @@
             <file leaf-file-name="AppCategory.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppCategory.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="540">
-                    <caret line="31" selection-start-line="30" selection-start-column="5" selection-end-line="31" />
+                  <state relative-caret-position="162">
+                    <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
                     <folding>
                       <element signature="e#413#414#0" expanded="true" />
                       <element signature="e#444#445#0" expanded="true" />
@@ -107,8 +176,17 @@
             <file leaf-file-name="DataDictionary.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DataDictionary.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="234">
-                    <caret line="13" column="28" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="28" />
+                  <state relative-caret-position="198">
+                    <caret line="11" column="24" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="24" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="DevUser.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DevUser.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="180">
+                    <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
                   </state>
                 </provider>
               </entry>
@@ -116,8 +194,8 @@
             <file leaf-file-name="AppVersion.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppVersion.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="234">
-                    <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+                  <state relative-caret-position="162">
+                    <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
                     <folding>
                       <element signature="e#2584#2585#0" expanded="true" />
                       <element signature="e#2617#2618#0" expanded="true" />
@@ -137,13 +215,75 @@
       </content>
     </window>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AppManager" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DevAppController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="158" column="151" lean-forward="true" selection-start-line="158" selection-start-column="151" selection-end-line="158" selection-end-column="151" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#2;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AppInfoMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="199" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="535">
+              <caret line="537" column="7" selection-start-line="537" selection-start-column="7" selection-end-line="537" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="92" column="90" selection-start-line="92" selection-start-column="90" selection-end-line="92" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appDetail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/appDetail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console_5.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_5.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -152,37 +292,7 @@
         <entry file="file://$PROJECT_DIR$/src/log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevAppController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevUserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -210,6 +320,15 @@
       <find>pageNum</find>
       <find>levelOne</find>
       <find>appFlatform</find>
+      <find>date</find>
+      <find>appinfoid</find>
+      <find>value</find>
+      <find>appInfoDtoapp</find>
+      <find>appInfoDTO</find>
+      <find>cc</find>
+      <find>Appversion</find>
+      <find>createby</find>
+      <find>historyV</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,15 +337,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/DevUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/DevUserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template2.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/dev/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevUserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppVersionMapper.java" />
@@ -234,7 +344,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DevUser.java" />
         <option value="$PROJECT_DIR$/src/test/main/java/Test.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/dev/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/dev/StudentIndex.jsp" />
@@ -255,19 +364,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/constant/ComonCodeConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/AppCategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/DevUserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppVersion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppCategory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/dto/AppInfoDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/caiqian/constant/CommonCodeConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DataDictionary.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_2.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_3.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_4.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppVersion.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/app/appDetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_5.sql" />
         <option value="$PROJECT_DIR$/src/log.txt" />
       </list>
     </option>
@@ -327,10 +446,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="y" value="291" />
-    <option name="width" value="1988" />
-    <option name="height" value="1698" />
+    <option name="x" value="37" />
+    <option name="y" value="466" />
+    <option name="width" value="1792" />
+    <option name="height" value="1543" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -456,14 +575,6 @@
               <item name="AppManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -498,38 +609,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aaa" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -545,13 +625,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="D:/Algorithm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17023346" />
     <property name="project.structure.side.proportion" value="0.20515826" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -560,6 +641,8 @@
       <recent name="C:\Users\11212\Desktop\AppManager\src\test\main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\11212\IdeaProjects\AppManager\src\main\webapp\jsp\app" />
+      <recent name="C:\Users\11212\IdeaProjects\AppManager\src\main\resources\sql" />
       <recent name="C:\Users\11212\Desktop\AppManager\src\main\webapp\static\plugins" />
       <recent name="C:\Users\11212\Desktop\AppManager\src\main\resources\spring" />
       <recent name="C:\Users\11212\Desktop\AppManager\src\main\resources" />
@@ -622,7 +705,7 @@
     <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.33" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="AppManager:war exploded">
           <settings>
@@ -735,7 +818,7 @@
       <workItem from="1544058061642" duration="2762000" />
       <workItem from="1544063479457" duration="4579000" />
       <workItem from="1544069346236" duration="258000" />
-      <workItem from="1544070332340" duration="75085000" />
+      <workItem from="1544070332340" duration="121566000" />
     </task>
     <servers />
   </component>
@@ -772,80 +855,82 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211851000" />
+    <option name="totallyTimeSpent" value="258332000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="233" width="1590" height="1358" extended-state="0" />
+    <frame x="30" y="373" width="1433" height="1234" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="9" weight="0.32925683" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.3286648" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.16574965" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="8" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.1997389" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.13163637" />
       <window_info id="Structure" order="1" sideWeight="0.097099625" side_tool="true" weight="0.19257222" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24965613" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47921225" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.34057257" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.47869447" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.33998185" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32925835" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18337408" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.32971373" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32971373" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9029004" visible="true" weight="0.18276763" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.20942883" />
+      <window_info anchor="bottom" id="Spring" order="13" weight="0.32971373" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.32971373" />
+      <window_info anchor="bottom" id="Database Console" order="0" visible="true" weight="0.31912965" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.90125173" visible="true" weight="0.20363636" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="5" sideWeight="0.09874826" side_tool="true" weight="0.20363636" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32971373" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32971373" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32964823" />
+      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.3286648" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31171787" />
-      <window_info anchor="bottom" id="Spring" order="12" weight="0.32971373" />
-      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.21008404" />
+      <window_info anchor="bottom" id="Spring" order="13" weight="0.32971373" />
+      <window_info anchor="bottom" id="Database Console" order="0" visible="true" weight="0.3286648" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24965613" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.32971373" />
+      <window_info id="Favorites" order="5" sideWeight="0.09874826" side_tool="true" visible="true" weight="0.20363636" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.32971373" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="CDI" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.34057257" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.34057257" />
+      <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32925835" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.16633794" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32971373" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.19594122" />
-      <window_info anchor="right" id="Database" order="4" weight="0.21104537" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.16574965" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32971373" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.90125173" visible="true" weight="0.20363636" />
+      <window_info anchor="right" id="Database" order="7" visible="true" weight="0.13163637" />
+      <window_info anchor="bottom" id="Message" order="1" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info id="Structure" order="1" sideWeight="0.5035461" side_tool="true" weight="0.27096775" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Structure" order="1" sideWeight="0.097099625" side_tool="true" weight="0.19257222" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.47921225" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -856,7 +941,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java</url>
+          <line>176</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -864,112 +957,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/StudentIndex.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/DataDictionaryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/main/java/aaa/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/DevUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/mapper/DataDictionaryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/DataDictionaryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/DevUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppVersionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppVersionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/DevUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppCategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -978,13 +965,6 @@
             <element signature="e#496#497#0" expanded="true" />
             <element signature="e#555#556#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1058,27 +1038,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/AppCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1089,58 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="31" selection-start-line="30" selection-start-column="5" selection-end-line="31" />
-          <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DevUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="104" selection-start-line="104" selection-end-line="110" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/constant/CommonCodeConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1165,10 +1080,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/main/java/aaa/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/schema/appinfodb/table/ad_promotion">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/AppCategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="30" column="48" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dev/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/schema/appinfodb/table/app_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/appinfodb_ad_promotion.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="229" column="44" selection-start-line="229" selection-start-column="34" selection-end-line="229" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/AppInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/service/impl/AppInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="112" column="49" lean-forward="true" selection-start-line="112" selection-start-column="49" selection-end-line="112" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2899#2900#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
+            <element signature="e#3298#3299#0" expanded="true" />
+            <element signature="e#3325#3326#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/dto/AppInfoDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="162">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#327#328#0" expanded="true" />
@@ -1206,24 +1260,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DataDictionary.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_4.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="28" />
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevUserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/mapper/AppInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="342">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DevUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/DataDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppVersion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="162">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="e#2584#2585#0" expanded="true" />
             <element signature="e#2617#2618#0" expanded="true" />
@@ -1239,22 +1320,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Bean/AppInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="403">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+            <element signature="e#1970#1971#0" expanded="true" />
+            <element signature="e#2008#2009#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        <state relative-caret-position="18">
+          <caret line="92" column="90" selection-start-line="92" selection-start-column="90" selection-end-line="92" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/appDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/app/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="158" column="151" lean-forward="true" selection-start-line="158" selection-start-column="151" selection-end-line="158" selection-end-column="151" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#2;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/caiqian/Controller/DevAppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
+        <state relative-caret-position="-2">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1263,15 +1380,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/caiqian/mapper/AppInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="535">
+          <caret line="537" column="7" selection-start-line="537" selection-start-column="7" selection-end-line="537" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b97bdd5-a78b-4c8a-8f75-d1d624be07f3/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/log.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>

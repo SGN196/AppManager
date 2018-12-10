@@ -101,7 +101,6 @@
 
                         </select>
                     </div>
-                </div>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
                         <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
@@ -154,7 +153,12 @@
                             <td>${obj.appStatus.valueName}</td>
                             <td>${obj.downloads}</td>
                             <td>${obj.newAppVersion.versionNo}</td>
-                            <td><button>点击操作</button></td>
+                            <td>
+                                <a href="${ctx}/app/toEdit/${obj.id}" class="layui-btn layui-btn-normal layui-btn-xs" ><i class="layui-icon" style="font-size: 20px" >&#xe642</i></a>
+                                <a href="${ctx}/app/delete/${obj.id}" class="layui-btn layui-btn-danger layui-btn-xs" ><i class="layui-icon" style="font-size: 20px" >&#xe640</i></a>
+                                <a href="${ctx}/app/queryById/${obj.id}" class="layui-btn                  layui-btn-xs" ><i class="layui-icon" style="font-size: 20px" >&#xe615</i></a>
+                            </td>
+
                         </tr>
                     </c:forEach>
                     <tr>
@@ -297,7 +301,9 @@
 
         //     form.render();
         // })
-
+        /**
+         * 用于表单的回显
+         */
         $(function(){
             var levelOne = $('#levelOne').val();
 

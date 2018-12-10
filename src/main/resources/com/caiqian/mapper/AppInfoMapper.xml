@@ -3,7 +3,7 @@
 <mapper namespace="com.caiqian.mapper.AppInfoMapper" >
 
     <resultMap id="base" type="com.caiqian.Bean.AppInfo">
-        <id property="id" column="app_id"></id>
+        <id property="id" column="appInfoId"></id>
         <result property="apkName" column="apk_name"></result>
         <result property="softwareName" column="software_name"></result>
 
@@ -143,6 +143,7 @@
             <if test="devUser != null and devUser.id != null">
                 ,created_by
             </if>
+
             <if test="modifyBy != null and modifyBy != ''">
                 ,modify_by
             </if>
@@ -158,6 +159,9 @@
             <if test="newAppVersion != null and newAppVersion.id != null">
                 ,version_id
             </if>
+             <if test="creationDate != null">
+                 ,creation_date
+             </if>
         </trim>
         <trim prefix="values(" suffix=")" prefixOverrides=",">
             <if test="softwareName != null and softwareName != ''">
@@ -232,14 +236,12 @@
             <if test="newAppVersion != null and newAppVersion.id != null">
                 ,#{newAppVersion.id}
             </if>
-
+            <if test="creationDate != null">
+                ,#{creationDate}
+            </if>
 
         </trim>
-      (software_name, apk_name, support_rom, interface_language,
-                     software_size, update_date, dev_id, app_info, status, on_sale_date,
-                     off_sale_date, flatform_id, category_level3, downloads, created_by,
-                     creation_date, modify_by, modify_date, category_level1, category_level2,
-                     logo_pic_path, logo_loc_path, version_id) value()
+
     </insert>
 
 
@@ -269,6 +271,7 @@
         <!--AND t1.category_Level3 = t5.id-->
         <!--AND t1.version_id = t7.id-->
         SELECT
+        t1.id AS appInfoId,
         t1.software_Name,
         t1.downloads,
         t1.APK_Name,
@@ -313,9 +316,229 @@
         </where>
     <!--</where>-->
 
+    </select>
 
+
+    <delete id="deleteById">
+      delete from app_info where id = #{id}
+    </delete>
+    
+    
+    <resultMap id="appSingleDetail" type="com.caiqian.Bean.AppInfo" extends="base">
+        <result property="appInfo" column="app_info"></result>
+        <result property="creationDate" column="creation_date"></result>
+        <result property="interfaceLanguage" column="interface_language"></result>
+        <result property="logoLocPath" column="logo_loc_path"></result>
+        <result property="logoPicPath" column="logo_pic_path"></result>
+        <result property="offSaleDate" column="off_sale_date"></result>
+        <result property="onSaleDate" column="on_sale_date"></result>
+        <result property="supportRom" column="support_rom"></result>
+        <result property="updateDate" column="update_date"></result>
+        <association property="categoryLevel1" javaType="com.caiqian.Bean.AppCategory">
+            <id property="id" column="level1Id"></id>
+            <result property="categoryName" column="level1Name"></result>
+        </association>
+        <association property="categoryLevel2" javaType="com.caiqian.Bean.AppCategory">
+            <id property="id" column="level2Id"></id>
+            <result property="categoryName" column="level2Name"></result>
+        </association>
+        <association property="categoryLevel3" javaType="com.caiqian.Bean.AppCategory">
+            <id property="id" column="level3Id"></id>
+            <result property="categoryName" column="level3Name"></result>
+        </association>
+        <association property="appStatus" javaType="com.caiqian.Bean.DataDictionary">
+            <result property="valueId" column="status_value_id" ></result>
+            <result property="valueName" column="status_value_name"></result>
+        </association>
+        <association property="flatform" javaType="com.caiqian.Bean.DataDictionary">
+            <result property="valueId" column="flatform_value_id" ></result>
+            <result property="valueName" column="flatform_value_name"></result>
+        </association>
+        <association property="newAppVersion" javaType="com.caiqian.Bean.AppVersion">
+            <id property="id" column="versionId"></id>
+            <result property="versionNo" column="version_no"></result>
+        </association>
+        <association property="devUser" javaType="com.caiqian.Bean.DevUser">
+            <id property="id" column="devId"></id>
+            <result property="devName" column="devName"></result>
+        </association>
+        <association property="createUser" javaType="com.caiqian.Bean.DevUser">
+            <id property="id" column="createId"></id>
+            <result property="devName" column="createName"></result>
+        </association>
+        <association property="modifyUser" javaType="com.caiqian.Bean.DevUser">
+            <id property="id" column="modifyId"></id>
+            <result property="devName" column="modifyName"></result>
+        </association>
+
+    </resultMap>
+
+    <resultMap id="appDetailWithHistoryVersion" type="com.caiqian.Bean.AppInfo" extends="appSingleDetail">
+        <collection property="appVersions" ofType="com.caiqian.Bean.AppVersion">
+
+            <id property="id" column="historyVersionId"></id>
+            <result property="versionNo" column="historyVersionNo"></result>
+            <result property="versionInfo" column="historyVersionInfo"></result>
+            <result property="apkLocPath" column="historyApkLocPath"></result>
+            <result property="downloadLink" column="historyDownloadLink"></result>
+            <result property="versionSize" column="historyVersionSize"></result>
+            <result property="apkFileName" column="historyApkName"></result>
+        </collection>
+    </resultMap>
+
+    <select id="queryById" resultMap="appSingleDetail">
+        select
+        t1.id as appInfoId, t1.app_info, t1.apk_name, t1.creation_date, t1.downloads, t1.interface_language,
+        t1.logo_loc_path, t1.off_sale_date, t1.on_sale_date, t1.software_name, t1.software_size, t1.support_rom,
+        t1.update_date,
+        c1.id as level1Id, c2.id as level2Id ,c3.id as level3Id,
+        c1.category_name level1Name, c2.category_name level2Name, c3.category_name level3Name,
+
+
+        d1.value_id status_value_id, d1.value_name status_value_name,
+        d2.value_id flatform_value_id, d2.value_name flatform_value_name,
+        v1.id versionId, v1.version_no,
+        u1.id createId, u1.dev_name createName,
+        u2.id modifyId, u2.dev_name modifyName,
+        u3.id devId, u3.dev_name devName
+        from app_info t1 left join app_category c1 on t1.category_level1 = c1.id
+        left join app_category c2 on t1.category_level2 = c2.id
+        left join app_category c3 on t1.category_level3 = c3.id
+        left join data_dictionary d1 on t1.status = d1.value_id
+        left join data_dictionary d2 on t1.flatform_id = d2.value_id
+        left join app_version v1  on t1.version_id = v1.id
+        left join dev_user u1 on t1.created_by = u1.id
+        left join dev_user u2 on t1.modify_by = u2.id
+        left join dev_user u3 on t1.dev_id = u3.id
+        where t1.id = #{id} and d1.type_code = 'APP_STATUS';
+    </select>
+
+
+    <update id="updateById">
+        update app_info
+        <trim prefixOverrides="," prefix="set" suffix="" >
+            <if test="softwareName != null and softwareName != ''">
+                ,software_name = #{softwareName}
+            </if>
+            <if test="apkName != null and apkName != ''">
+                ,apk_name = #{apkName}
+            </if>
+            <if test="supportRom != null and supportRom != ''">
+                ,support_rom = #{supportRom}
+            </if>
+            <if test="interfaceLanguage != null and interfaceLanguage != ''">
+                ,interface_language = #{interfaceLanguage}
+            </if>
+            <if test="softwareSize != null">
+                ,software_size = #{softwareSize}
+            </if>
+            <if test="updateDate != null">
+                ,update_date = #{updateDate}
+            </if>
+            <if test="devUser != null and devUser.id != ''">
+                ,dev_id = #{devUser.id}
+            </if>
+
+            <if test="appInfo != null and appInfo != ''">
+                ,app_info = #{appInfo}
+            </if>
+            <if test="status != null and status != ''">
+                ,status = #{status}
+            </if>
+            <if test="appStatus != null and appStatus.valueId != null">
+                ,status = #{appStatus.valueId}
+            </if>
+            <if test="onSaleDate != null ">
+                ,on_sale_date = #{onSaleDate}
+            </if>
+            <if test="flatformId != null and flatformId != ''">
+                ,flatform_id = #{flatformId}
+            </if>
+            --                 这两句可能出错，视频使用的是下面的判断
+            <if test="flatform != null and flatform.valueId != null">
+                ,flatform_id = #{flatform.valueId}
+            </if>
+
+            <if test="categoryLevel1 != null and categoryLevel1.id != null">
+                ,category_level1 = #{categoryLevel1.id}
+            </if>
+            <if test="categoryLevel2 != null and categoryLevel2.id != null">
+                ,category_level2 = #{categoryLevel2.id}
+            </if>
+            <if test="categoryLevel3 != null and categoryLevel3.id != null">
+                ,category_level3 = #{categoryLevel3.id}
+            </if>
+            <if test="downloads != null and downloads != ''">
+                ,downloads = #{downloads}
+            </if>
+            <if test="devUser.id != null">
+                ,created_by = #{devUser.id}
+            </if>
+
+            <if test="modifyBy == null and modifyUser.id != null">
+                ,modify_by = #{modifyUser.id}
+            </if>
+            <if test="modifyBy != null and modifyUser.id == null">
+                ,modify_by = #{modifyBy}
+            </if>
+            <if test="modifyBy != null and modifyUser.id != null">
+                ,modify_by = #{modifyUser.id}
+            </if>
+
+            <if test="modifyDate != null ">
+                ,modify_date = #{modifyDate}
+            </if>
+            <if test="logoPicPath != null and logoPicPath != ''">
+                ,logo_pic_path = #{logoPicPath}
+            </if>
+            <if test="logoLocPath != null and logoLocPath != ''">
+                ,logo_loc_path = #{logoLocPath}
+            </if>
+            <if test="newAppVersion != null and newAppVersion.id != null">
+                ,version_id = #{newAppVersion.id}
+            </if>
+
+        </trim>
+         <where>
+             <if test="id != null">
+                 and id = #{id}
+             </if>
+         </where>
+    </update>
+    
+    <select id="queryDetailById" resultMap="appDetailWithHistoryVersion">
+        select
+        t1.id as appInfoId, t1.app_info, t1.apk_name, t1.creation_date, t1.downloads, t1.interface_language,
+        t1.logo_loc_path, t1.off_sale_date, t1.on_sale_date, t1.software_name, t1.software_size, t1.support_rom,
+        t1.update_date,
+        c1.id as level1Id, c2.id as level2Id ,c3.id as level3Id,
+        c1.category_name level1Name, c2.category_name level2Name, c3.category_name level3Name,
+
+
+        d1.value_id status_value_id, d1.value_name status_value_name,
+        d2.value_id flatform_value_id, d2.value_name flatform_value_name,
+        v1.id versionId, v1.version_no,
+        u1.id createId, u1.dev_name createName,
+        u2.id modifyId, u2.dev_name modifyName,
+        u3.id devId, u3.dev_name devName,
+        v2.id historyVersionId, v2.version_no historyVersionNo, v2.version_info historyVersionInfo,
+        v2.apk_loc_path historyApkLocPath, v2.download_link historyDownloadLink,
+        v2.version_size  historyVersionSize, v2.apk_file_name historyApkName
+        from app_info t1 left join app_category c1 on t1.category_level1 = c1.id
+        left join app_category c2 on t1.category_level2 = c2.id
+        left join app_category c3 on t1.category_level3 = c3.id
+        left join data_dictionary d1 on t1.status = d1.value_id
+        left join data_dictionary d2 on t1.flatform_id = d2.value_id
+        left join app_version v1  on t1.version_id = v1.id
+        left join dev_user u1 on t1.created_by = u1.id
+        left join dev_user u2 on t1.modify_by = u2.id
+        left join dev_user u3 on t1.dev_id = u3.id
+        left join app_version v2 on t1.id = v2.app_id
+        where t1.id = #{id} and d1.type_code = 'APP_STATUS'
+        ORDER BY v2.id desc
 
 
     </select>
+
 
 </mapper>

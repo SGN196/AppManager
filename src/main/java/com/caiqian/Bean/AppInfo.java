@@ -43,7 +43,11 @@ public class AppInfo {
 
     private Date modifyDate;
 
-    private DevUser devUser;
+    private DevUser devUser;    //开发者
+
+    private DevUser createUser;     //修改者
+
+    private DevUser modifyUser;
 
     private AppCategory categoryLevel1;
 
@@ -64,7 +68,7 @@ public class AppInfo {
 
     private DataDictionary flatform;
 
-    private DataDictionary appStatus;
+    private DataDictionary appStatus;   //app状态
 
     public DataDictionary getFlatform() {
         return flatform;
@@ -90,7 +94,21 @@ public class AppInfo {
         this.newAppVersion = newAppVersion;
     }
 
+    public DevUser getCreateUser() {
+        return createUser;
+    }
 
+    public void setCreateUser(DevUser createUser) {
+        this.createUser = createUser;
+    }
+
+    public DevUser getModifyUser() {
+        return modifyUser;
+    }
+
+    public void setModifyUser(DevUser modifyUser) {
+        this.modifyUser = modifyUser;
+    }
 
     public Date getOnSaleDate() {
         return onSaleDate;

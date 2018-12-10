@@ -28,40 +28,48 @@
                     <div class="layui-input-inline">
                         <input type="text" name="softwareName" placeholder="请输入软件名称" autocomplete="off" class="layui-input">
                     </div>
+                </div>
+                <div class="layui-form-item">
                     <label class="layui-form-label">APK名称</label>
                     <div class="layui-input-inline">
                         <input type="text" name="apkName" placeholder="请输入APK名称"  autocomplete="off" class="layui-input">
                     </div>
+                </div>
+                <div class="layui-form-item">
                     <label class="layui-form-label">支持ROM</label>
                     <div class="layui-input-inline">
                         <input type="text" name="supportRom" placeholder="请输入ROM名称" autocomplete="off" class="layui-input">
                     </div>
+                </div>
+                <div class="layui-form-item">
                     <label class="layui-form-label">界面语言</label>
                     <div class="layui-input-inline">
                         <input type="text" name="interfaceLanguage" placeholder="请输入界面语言" autocomplete="off" class="layui-input">
                     </div>
+                </div>
+                <div class="layui-form-item">
                     <label class="layui-form-label">软件大小</label>
                     <div class="layui-input-inline">
                         <input type="text" name="softwareSize" placeholder="请输入软件大小"  autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <hr>
-                <%-------------------------------------------------%>
-                <div class="layui-inline">
-                    <label class="layui-form-label">APP状态</label>
-                    <div class="layui-input-block">
-                        <select lay-filter="status" name="status">
+                <%------------------在逻辑上，新添加的APP都是未审核的，所以不需要APP状态这个选项-------------------------%>
+                <%--<div class="layui-inline">--%>
+                    <%--<label class="layui-form-label">APP状态</label>--%>
+                    <%--<div class="layui-input-block">--%>
+                        <%--<select lay-filter="status" name="status">--%>
 
-                            <option value="" selected="">-请选择-</option>
-                            <c:forEach items="${appStatus}" var="obj">
-                                <option value="${obj.valueId}"  >${obj.valueName}</option>
+                            <%--<option value="" selected="">-请选择-</option>--%>
+                            <%--<c:forEach items="${appStatus}" var="obj">--%>
+                                <%--<option value="${obj.valueId}"  >${obj.valueName}</option>--%>
 
-                            </c:forEach>
+                            <%--</c:forEach>--%>
 
 
-                        </select>
-                    </div>
-                </div>
+                        <%--</select>--%>
+                    <%--</div>--%>
+                <%--</div>--%>
                 <div class="layui-inline">
                     <label class="layui-form-label">所属平台</label>
                     <div class="layui-input-block">
@@ -74,7 +82,7 @@
 
                         </select>
                     </div>
-                </div>
+                </div><br>
                 <!------------------------------------------------->
                 <div class="layui-inline">
                     <label class="layui-form-label">一级分类</label>
@@ -86,7 +94,7 @@
                             </c:forEach>
                         </select>
                     </div>
-                </div>
+                </div><br>
                 <div class="layui-inline">
                     <label class="layui-form-label">二级分类</label>
                     <div class="layui-input-block">
@@ -95,6 +103,7 @@
                         </select>
                     </div>
                 </div>
+                <br>
                 <div class="layui-inline">
                     <label class="layui-form-label">三级分类</label>
                     <div class="layui-input-block">
@@ -115,7 +124,7 @@
                         <input type="text" name="appInfo" placeholder="请输入应用简介" autocomplete="off" class="layui-input">
                     </div>
 
-                </div>
+                </div><br>
                 <div class="layui-form-item">
                     <div class="layui-input-block">
                         <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
@@ -216,7 +225,7 @@
 
         $(function(){
             var levelOne = $('#levelOne').val();
-
+            alert(levelOne)
             if(levelOne != '' && levelOne != null){
                 var levelTwo = '${appInfoDTO.levelTwo}';
                 if(levelTwo != null && levelTwo != undefined && levelTwo != ''){
